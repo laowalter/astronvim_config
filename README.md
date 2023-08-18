@@ -17,6 +17,12 @@ mv ~/.local/share/nvim ~/.local/share/nvim.bak
 git clone https://github.com/AstroNvim/AstroNvim ~/.config/nvim
 ```
 
+```shell
+TSInstall bash python lua html
+MasonInstall pyright flake8 black 
+MasonInstall stylua # requrired by null-ls
+```
+
 #### Create a new user repository from this template
 
 Press the "Use this template" button above to create a new repository to store your user configuration.
@@ -26,7 +32,7 @@ You can also just clone this repository directly if you do not want to track you
 #### Clone the repository
 
 ```shell
-git clone https://github.com/<your_user>/<your_repository> ~/.config/nvim/lua/user
+git clone https://github.com//laowalter/astronvim_config.git ~/.config/nvim/lua/user
 ```
 
 #### Start Neovim
