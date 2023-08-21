@@ -4,6 +4,14 @@ return {
     -- add more things to the ensure_installed table protecting against community packs modifying it
     opts.ensure_installed = require("astronvim.utils").list_insert_unique(opts.ensure_installed, {
       "lua",
+      "python",
+      "bash",
+      "html",
+      "markdown",
+      "markdown_inline",
+      "go",
+      "c",
+      "javascript",
     })
   end,
 
@@ -15,8 +23,6 @@ return {
           rainbow = {
             enable = true,
             extended_mode = true, -- Also highlight non-bracket delimiters like html, tag, bool
-            -- query = "rainbow-parens",
-            -- strategy = require("ts-rainbow").strategy.global,
           },
         }
       end,
