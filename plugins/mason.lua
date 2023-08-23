@@ -10,6 +10,8 @@ return {
         "lua_ls",
         "gopls",
         "pylsp",
+        "html",
+        "cssls",
       })
     end,
   },
@@ -22,6 +24,10 @@ return {
       opts.ensure_installed = require("astronvim.utils").list_insert_unique(opts.ensure_installed, {
         "prettier",
         "stylua",
+        "black",
+        "pylint",
+        "eslint",
+        "pycodestyle",
       })
     end,
   },
@@ -32,6 +38,11 @@ return {
       -- add more things to the ensure_installed table protecting against community packs modifying it
       opts.ensure_installed = require("astronvim.utils").list_insert_unique(opts.ensure_installed, {
         -- "python",
+        -- "bash",
+        -- "cppdbg",
+        -- "delve",
+        -- "js",
+        -- "php",
       })
     end,
   },
