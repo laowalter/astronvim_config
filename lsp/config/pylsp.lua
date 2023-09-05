@@ -6,14 +6,12 @@ return {
           ignore = { "W191", "E101", "W503" },
           maxLineLength = 120,
         },
-
-        -- ~/.pylintrc
-        -- [main]
-        -- bad-names=""
-        -- disable=import-error, C0114
-        pylint = {
-          badNames = "", -- ~/.pylintrc [main] bad-names=""
-        },
+        -- pylint = {
+        --   main = {
+        --     ["bad-names"] = { "" }, -- ~/.pylintrc [main] bad-names=""
+        --     disable = { "invalid-name", "import-error", "C0114", "missing-function-docstring" },
+        --   },
+        -- },
       },
     },
   },

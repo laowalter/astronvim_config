@@ -25,8 +25,8 @@ return {
         "prettier",
         "stylua",
         "black",
-        "pylint",
-        "eslint",
+        -- "pylint",
+        -- "eslint",
         "pycodestyle",
       })
     end,
